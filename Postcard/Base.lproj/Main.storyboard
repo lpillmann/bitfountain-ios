@@ -81,15 +81,6 @@
                                     <rect key="frame" x="24" y="278" width="266" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep3-9P-E30">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="86" width="246" height="48"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk2-ye-30S">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -102,6 +93,24 @@
                                     <action selector="sendMessageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCO-Z4-vcG"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBI-k0-aPI">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="102" width="170" height="21"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="messageLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep3-9P-E30">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="123" width="246" height="48"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -109,8 +118,9 @@
                                 <exclude reference="HXA-Q0-4En"/>
                                 <exclude reference="x3h-gN-KXu"/>
                                 <exclude reference="AvH-3s-KPr"/>
-                                <exclude reference="Ep3-9P-E30"/>
                                 <exclude reference="Kk2-ye-30S"/>
+                                <exclude reference="fBI-k0-aPI"/>
+                                <exclude reference="Ep3-9P-E30"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -118,8 +128,9 @@
                                 <include reference="HXA-Q0-4En"/>
                                 <include reference="x3h-gN-KXu"/>
                                 <include reference="AvH-3s-KPr"/>
-                                <include reference="Ep3-9P-E30"/>
                                 <include reference="Kk2-ye-30S"/>
+                                <include reference="fBI-k0-aPI"/>
+                                <include reference="Ep3-9P-E30"/>
                             </mask>
                         </variation>
                     </view>
@@ -127,6 +138,7 @@
                         <outlet property="enterMessageTextField" destination="AvH-3s-KPr" id="wif-KR-rI0"/>
                         <outlet property="enterNameTextField" destination="x3h-gN-KXu" id="NTU-Uk-FsI"/>
                         <outlet property="messageLabel" destination="Ep3-9P-E30" id="zbK-kK-ST3"/>
+                        <outlet property="nameLabel" destination="fBI-k0-aPI" id="WsC-eZ-Sjc"/>
                         <outlet property="sendMessageButton" destination="Kk2-ye-30S" id="BIM-NX-YuU"/>
                     </connections>
                 </viewController>
