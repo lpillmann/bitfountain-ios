@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // Testing commits
     @IBAction func sendMessageButtonPressed(sender: UIButton) {
         var color = sender.backgroundColor;
         sendMessageButton.backgroundColor = nil;
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         enterMessageTextField.resignFirstResponder();
 
         sendMessageButton.backgroundColor = color;
-        sendMessageButton.setTitle("Message sent", forState: UIControlState.Normal);        
+        sendMessageButton.setTitle("Message sent", forState: UIControlState.Normal);
     }
 
 }
